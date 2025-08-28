@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product-Based Roadmap</title>
+  <link rel="stylesheet" href="product-style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>🚀 Product-Based Companies Roadmap (SWE)</h1>
+    <p>Step-by-step guide to DSA, System Design, CS Core, and Interviews</p>
+  </header>
+
+  <!-- Timeline Section -->
+  <section class="timeline">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>💻 Programming Fundamentals</h2>
+        <ul>
+          <li>Arrays, Strings, Linked List, Stack, Queue, HashMap, Heap, Graph, Trees, Tries</li>
+          <li>Sorting, Searching, Recursion, DP, Greedy, Divide & Conquer, Graph Algorithms</li>
+          <li>Big-O, Big-Theta, Big-Omega</li>
+          <li>Language choice: C++ / Java / Python</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>🧠 Problem Solving (DSA)</h2>
+        <ul>
+          <li>Practice: LeetCode, Codeforces, InterviewBit, GFG</li>
+          <li>Topics: Arrays, Sliding Window, Binary Search, Trees, Graphs, DP, Bit Manipulation</li>
+          <li>Target: 400–500 quality problems</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>🏗️ System Design</h2>
+        <ul>
+          <li>Freshers: Low-Level Design → OOPs, Patterns, Case Studies</li>
+          <li>Experienced: High-Level Design → Scalability, Caching, Sharding, Distributed Systems</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>📚 Core CS Subjects</h2>
+        <ul>
+          <li>OS: Processes, Threads, Synchronization, Deadlock</li>
+          <li>DBMS: SQL, Joins, Normalization, Transactions, Indexing</li>
+          <li>Networks: TCP/IP, OSI, HTTP/HTTPS, DNS, REST APIs</li>
+          <li>OOPs: Crucial for interviews & design</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>⚡ Coding Skills Beyond DSA</h2>
+        <ul>
+          <li>Competitive Coding → helps in online rounds</li>
+          <li>Development → Web, Android, Backend, ML basics</li>
+          <li>Projects → Keep GitHub updated with real-world work</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>🎤 Interview Preparation</h2>
+        <ul>
+          <li>Resume: Crisp, 1-page, highlight projects + internships</li>
+          <li>Mock Interviews: Pramp, Interviewing.io, peers</li>
+          <li>Behavioral: Answer with STAR method</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <h2>📌 Resources</h2>
+        <ul>
+          <li>DSA: Striver’s Sheet, LeetCode Top Questions</li>
+          <li>System Design: Grokking the System Design Interview</li>
+          <li>CS Subjects: Gate Smashers, GFG</li>
+          <li>Practice: LeetCode contests, Codeforces Div3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about">
+    <img src="https://i.pinimg.com/736x/80/72/ae/8072ae50712eba8af10e68c4c4907c74.jpg" alt="Profile" class="profile-pic">
+    <h2>About Me</h2>
+    <p>Hi, I’m <b>Vivek</b> — passionate about solving problems and building real-world applications.  
+    I created this roadmap to help aspiring engineers crack product-based companies.</p>
+    <div class="about-links">
+      <a href="https://www.linkedin.com/in/vivek-kr-149117352" target="_blank">LinkedIn</a>
+      <a href="https://github.com/VivekCodes07" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/thisainthim___?igsh=MTNoNHo2NWRvdHZ5e" target="_blank">Instagram</a>
+      <a href="tel:+916201766193">Phone</a>
+    </div>
+  </section>
+
+  <!-- Download PDF Button -->
+<section class="download">
+  <button onclick="window.print()">✨ Download PDF</button>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed with ❤️ & lots of struggle</p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const items = document.querySelectorAll(".timeline-item, .about");
+    window.addEventListener("scroll", () => {
+      items.forEach(item => {
+        const top = item.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+          item.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
